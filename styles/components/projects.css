@@ -1,0 +1,31 @@
+.projects {
+  margin-bottom: 48px;
+}
+
+.projects__section-title {
+  font-family: 'General Sans', sans-serif;
+  font-size: 32px;
+  color: #f5f5f5;
+}
+
+.projects-container {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.project img {
+  width: 544px;
+  height: 296px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 4px;
+  filter: saturate(0);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.project img:hover {
+  filter: saturate(50%);
+}
