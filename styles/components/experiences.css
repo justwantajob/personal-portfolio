@@ -38,12 +38,12 @@
 .experience-link {
   text-decoration: none;
   font-size: var(--text-xs);
-  color: rgb(130, 200, 255);
+  color: var(--color-link-blue);
   transition: color .3s ease;
 }
 
 .experience-link:hover {
-  color: var(--color-link);
+  color: var(--color-link-blue-faded);
 }
 
 @media (min-width: 768px) {

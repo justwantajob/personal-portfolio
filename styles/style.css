@@ -13,6 +13,8 @@
   --color-component-background: rgb(232, 232, 232);
 
   --color-link: rgba(26, 26, 26, 0.5);
+  --color-link-blue: rgb(0, 119, 182);
+  --color-link-blue-faded: rgba(0, 118, 182, 0.51);
 
   --default-gap: 8px;
 
@@ -51,11 +53,17 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--default-gap) * 4);
+  gap: calc(var(--default-gap) * 3);
+}
+
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--default-gap) * 2);
 }
 
 @media (min-width: 768px) {
-  main {
+  .section-block {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
