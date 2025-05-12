@@ -20,3 +20,4 @@ This project is built as part of my web development practice, following the prac
 - Gain experience with version control (Git), hosting, and deploying a website.
 
 ### Screenshot
+![image](personal-portfolio.png)
