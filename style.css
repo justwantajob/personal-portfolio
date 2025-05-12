@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  font-family: Inter;
+  font-weight: 400;
+
+  --color-background-dark: rgb(26, 26, 26);
+  --color-background-light: rgb(242, 242, 242);
+  --color-primary-dark: rgb(26, 26, 26);
+  --color-primary-light: rgb(242, 242, 242);
+
+  --color-link-dark: rgba(26, 26, 26, 0.5);
+  --color-link-light: rgba(242, 242, 242, 0.5);
+
+  --default-gap: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-background-light);
+  color: var(--color-primary-dark);
+  padding: 16px 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--default-gap) * 2);
+}
+
+.header-head-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--default-gap);
+}
+
+.header-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--default-gap);
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.header-heading {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--default-gap);
+  /* margin-top: 8px; */
+  font-size: 14px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-link-dark);
+  transition: color .3s ease;
+}
+
+.nav-link::after {
+  content: " /";
+}
+
+.nav-link:hover {
+  color: var(--color-primary-dark);
+}
+
+.header-body-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-subheading {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-description {
+  font-size: 14px;
+  color: var(--color-link-dark);
+}
+
+@media (min-width: 768px) {
+  header {
+    gap: calc(var(--default-gap) * 8);
+  }
+
+  .header-head-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-head {
+    flex-direction: row;
+    gap: var(--default-gap);
+  }
+
+  .header-subheading {
+    font-size: 24px;
+  }
+
+  .header-description {
+    font-size: 16px;
+  }
+}
