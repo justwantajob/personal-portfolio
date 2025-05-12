@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   gap: calc(var(--default-gap) * 1);
-  background-color: rgba(200, 200, 200, 0.06);
+  background-color: rgba(200, 200, 200, 0.16);
   border-left: 4px solid rgb(200, 200, 200);
   padding: var(--default-gap);
   width: 100%;
@@ -47,6 +47,9 @@
 }
 
 @media (min-width: 768px) {
+  .experiences {
+    width: 50%;
+  }
   .experience-heading {
     font-size: var(--text-xl);
   }
