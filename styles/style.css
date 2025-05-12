@@ -2,13 +2,15 @@
 
 :root {
   font-family: 'Fira Code', monospace;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: --text-base;
 
   --color-background-dark: rgb(26, 26, 26);
   --color-background-light: rgb(242, 242, 242);
   --color-primary-dark: rgb(26, 26, 26);
   --color-primary-light: rgb(242, 242, 242);
+
+  --color-component-background: rgb(232, 232, 232);
 
   --color-link: rgba(26, 26, 26, 0.5);
 
@@ -41,4 +43,7 @@ body {
   background-color: var(--color-background-light);
   color: var(--color-primary-dark);
   padding: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--default-gap) * 2);
 }
