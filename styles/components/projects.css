@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: calc(var(--default-gap) * 3);
+  gap: calc(var(--default-gap) * 2);
 }
 
 .projects-heading {
@@ -17,7 +17,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: calc(var(--default-gap));
 }
 
@@ -45,4 +44,22 @@
 
 .project-link:hover {
   color: var(--color-link);
+}
+
+@media (min-width: 768px) {
+  .projects {
+    width: 50%;
+  }
+
+  .projects-heading {
+    font-size: var(--text-xl);
+  }
+
+  .project-list {
+    gap: calc(var(--default-gap) * 2.2);
+  }
+
+  .project {
+    font-size: var(--text-sm);
+  }
 }
